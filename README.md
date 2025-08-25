@@ -14,13 +14,10 @@ Ideal para afiliados que compartilham links no Instagram, WhatsApp, blogs ou red
 ```bash
 https://affiliate.shopee.com.br/offer/product_offer/ITEMID
 ```
-Funciona com qualquer formato de URL da Shopee:
-```bash
-https://shopee.com.br/product/...
-```
-```bash
-https://shopee.com.br/nome-do-produto-i.SHOPID.ITEMID
-```
+- Funciona com qualquer formato de URL da Shopee:
+  - https://shopee.com.br/product/...
+  - https://shopee.com.br/nome-do-produto-i.SHOPID.ITEMID
+
 
 - 💾 Exporta todos os links convertidos em um arquivo .txt com um clique
 - 🚫 Sem necessidade de copiar e colar manualmente
