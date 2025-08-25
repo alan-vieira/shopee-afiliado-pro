@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Shopee Afiliado Pro",
+  "version": "1.0",
+  "description": "Converte automaticamente links da Shopee para o novo formato de afiliado.",
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+}
