@@ -93,8 +93,8 @@ https://affiliate.shopee.com.br/offer/product_offer/20199562728
 - Baseado em chrome.tabs para leitura de abas
 
 ## 📝 Licença
-Este projeto está licenciado sob a Licença MIT.
-Veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a **Licença MIT**.
+Veja o arquivo [LICENSE](https://github.com/alan-vieira/shopee-afiliado-pro/tree/main?tab=MIT-1-ov-file) para mais detalhes.
 
 ## Autor
 
