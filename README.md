@@ -14,13 +14,10 @@ Ideal para afiliados que compartilham links no Instagram, WhatsApp, blogs ou red
 ```bash
 https://affiliate.shopee.com.br/offer/product_offer/ITEMID
 ```
-Funciona com qualquer formato de URL da Shopee:
-```bash
-https://shopee.com.br/product/...
-```
-```bash
-https://shopee.com.br/nome-do-produto-i.SHOPID.ITEMID
-```
+- Funciona com qualquer formato de URL da Shopee:
+  - https://shopee.com.br/product/...
+  - https://shopee.com.br/nome-do-produto-i.SHOPID.ITEMID
+
 
 - 💾 Exporta todos os links convertidos em um arquivo .txt com um clique
 - 🚫 Sem necessidade de copiar e colar manualmente
@@ -93,8 +90,8 @@ https://affiliate.shopee.com.br/offer/product_offer/20199562728
 - Baseado em chrome.tabs para leitura de abas
 
 ## 📝 Licença
-Este projeto está licenciado sob a Licença MIT.
-Veja o arquivo LICENSE para mais detalhes.
+Este projeto está licenciado sob a **Licença MIT**.
+Veja o arquivo [LICENSE](https://github.com/alan-vieira/shopee-afiliado-pro/tree/main?tab=MIT-1-ov-file) para mais detalhes.
 
 ## Autor
 
