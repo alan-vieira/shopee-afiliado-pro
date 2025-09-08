@@ -52,7 +52,7 @@ chrome://extensions
 4. Clique em "Carregar sem compactação".
 5. Selecione a pasta `shopee-afiliado-pro`.
 
-## 🚀 Como Usar
+---
 
 ## 🚀 Como Usar
 
