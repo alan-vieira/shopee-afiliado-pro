@@ -1,7 +1,35 @@
 document.addEventListener('DOMContentLoaded', () => {
   const ul = document.getElementById('url-list');
   const salvarBtn = document.getElementById('salvar-btn');
+  const copyAllBtn = document.getElementById('copy-all-btn');
   let urls = [];
+
+  // Atualiza o contador
+  function updateCounter() {
+    document.getElementById('counter').textContent = urls.length;
+  }
+
+  // Função para mostrar notificação
+  function showNotification(message) {
+    const notification = document.getElementById('notification');
+    const text = document.getElementById('notification-text');
+    const okBtn = document.getElementById('notification-ok');
+
+    text.textContent = message;
+    notification.style.display = 'block';
+
+    // Fecha ao clicar em OK
+    okBtn.onclick = () => {
+      notification.style.display = 'none';
+    };
+
+    // Fecha automaticamente após 3 segundos
+    setTimeout(() => {
+      if (notification.style.display === 'block') {
+        notification.style.display = 'none';
+      }
+    }, 3000);
+  }
 
   // Extrai o itemid do formato: i.SHOPID.ITEMID
   const extrairItemId = (url) => {
@@ -28,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (itemId) {
+      // ✅ Corrigido: removido espaço extra
       return `https://affiliate.shopee.com.br/offer/product_offer/${itemId}`;
     }
     return null;
@@ -57,6 +86,9 @@ document.addEventListener('DOMContentLoaded', () => {
       li.classList.add('empty');
       ul.appendChild(li);
     }
+
+    // Atualiza contador após carregar
+    updateCounter();
   });
 
   // Botão para salvar em .txt
@@ -75,5 +107,21 @@ document.addEventListener('DOMContentLoaded', () => {
     a.click();
 
     URL.revokeObjectURL(urlBlob);
+  });
+
+  // Botão para copiar todos os links
+  copyAllBtn.addEventListener('click', async () => {
+    if (urls.length === 0) {
+      showNotification("Nenhum link para copiar.");
+      return;
+    }
+
+    try {
+      await navigator.clipboard.writeText(urls.join('\n'));
+      showNotification(`${urls.length} link(s) copiado(s)!`);
+    } catch (err) {
+      console.error('Erro ao copiar:', err);
+      showNotification('Falha ao copiar. Verifique permissões.');
+    }
   });
 });
