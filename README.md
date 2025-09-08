@@ -54,13 +54,15 @@ chrome://extensions
 
 ## 🚀 Como Usar
 
+## 🚀 Como Usar
+
 1. Abra várias páginas de produtos da Shopee em abas diferentes.
 2. Clique no ícone da extensão na barra de ferramentas do Chrome.
 3. O popup exibirá automaticamente todos os links convertidos.
 4. Veja quantos links foram encontrados no contador.
 5. Clique em:
-  - "Salvar em .txt" → para baixar a lista completa.
-  - "Copiar Todos" → para copiar todos os links de uma vez (um por linha).
+   - "Salvar em .txt" → para baixar a lista completa.
+   - "Copiar Todos" → para copiar todos os links de uma vez (um por linha).
 
 ✅ Pronto! Agora você pode colar os links onde quiser — todos já estão no formato de afiliado.
 
